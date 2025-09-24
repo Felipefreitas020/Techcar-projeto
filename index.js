@@ -1,37 +1,23 @@
-const Onix = require('./class/Onix')
-const Polo = require('./class/Polo')
-const Strada = require('./class/Strada')
+const prompt = require("prompt-sync")()
 
-const onix = new Onix("Onix LT Turbo")
-const polo = new Polo("Polo Comfortline")
-const strada = new Strada("Strada Volcano")
 
-const carros = [
-  { nome: "Onix", objeto: onix },
-  { nome: "Polo", objeto: polo },
-  { nome: "Strada", objeto: strada }
-]
+const Onix = require("./class/Onix")
+const Polo = require("./class/Polo")
+const Strada = require("./class/Strada")
 
-const readline = require("readline").createInterface({
-  input: process.stdin,
-  output: process.stdout
-})
+
+const carros = [new Onix(), new Polo(), new Strada()]
 
 console.log("Escolha um carro:")
 carros.forEach((carro, i) => {
   console.log(`${i + 1}. ${carro.nome}`)
 })
 
-readline.question("\nDigite o número do carro: "), (opcao) => {
-  const escolha = parseInt(opcao) - 1
-}
+const resposta = prompt("Digite o número: ")
+const indice = parseInt(resposta) - 1
 
-  if (escolha >= 0 && escolha < carros.length) {
-  console.log("\n=== Resultado ===")
-  console.log(carros[escolha].objeto.acessoPainel())
+if (indice >= 0 && indice < carros.length) {
+  console.log(` Você escolheu: ${carros[indice].nome}`)
 } else {
-  console.log("Opção inválida!")
+  console.log(" Opção inválida!"
 }
-
-readline.close()
-
