@@ -1,4 +1,4 @@
-const carros = require('./carros');
+const carros = require('./Carros');
 
 class Polo extends carros {
     constructor(descricao){
@@ -11,4 +11,5 @@ class Polo extends carros {
             e economia com versões (Track, MPI,TSI, Comfortline, Highline, GTS ) 👍`
     }
 }
+
 module.exports = Polo;
