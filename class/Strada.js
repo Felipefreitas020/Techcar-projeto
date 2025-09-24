@@ -1,4 +1,4 @@
-const carros = require('./carros');
+const carros = require('./Carros');
 
 class Strada extends carros {
     constructor(descricao){
@@ -12,4 +12,5 @@ class Strada extends carros {
             e cabine dupla, a torna uma escolha popular entre diferentes perfis de consumidores, com o motor 1.3 e 1.0 Turbo  versões Endurance, Freedom, Volcano 👍`
     }
 }
+
 module.exports = Strada;
