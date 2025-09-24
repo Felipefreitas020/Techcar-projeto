@@ -1,4 +1,4 @@
-const carros = require('./carros');
+const carros = require('./Carros');
 
 class Onix extends carros {
     constructor(descricao){
@@ -11,4 +11,5 @@ class Onix extends carros {
             Ele está disponível nas versões hatch e sedã, com  versões (LT, LTZ TURBO, RS Turbo, Premier ) opções de motores 1.0 aspirado ou turbo, e diferentes pacotes de equipamentos. 👍`
     }
 }
+
 module.exports = Onix;
