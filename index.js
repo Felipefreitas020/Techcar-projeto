@@ -1,5 +1,5 @@
-const Onix = require('./class/onix')
-const Polo = require('./class/polo')
+const Onix = require('./class/Onix')
+const Polo = require('./class/Polo')
 const Strada = require('./class/Strada')
 
 const onix = new Onix("Onix LT Turbo")
@@ -34,3 +34,4 @@ readline.question("\nDigite o número do carro: "), (opcao) => {
 }
 
 readline.close()
+
